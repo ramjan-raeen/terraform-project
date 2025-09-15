@@ -99,6 +99,7 @@ Use Terraform modules to avoid code duplication.
 
 Automate deployments with GitHub Actions or Terraform Cloud.
 
-## ✍️ Author: [Ramjan](www.linkedin.com/in/ramjan-r-9a1082164)
+## ✍️ Author: Ramjan
 ## 📌 License: 
 This project is licensed under the [MIT License](./LICENSE).
+
