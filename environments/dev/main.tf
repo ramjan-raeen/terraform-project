@@ -1,20 +1,20 @@
-resource "google_compute_instance" "vm" {
-    name = "tf-vm"
-    machine_type = "e2-micro"
-    project = var.project_id
-    zone = var.zone
+# resource "google_compute_instance" "vm" {
+#     name = "tf-vm"
+#     machine_type = "e2-micro"
+#     project = var.project_id
+#     zone = var.zone
 
-    boot_disk {
-        initialize_params {
-            image = "debian-cloud/debian-11"
-        }
-    }
+#     boot_disk {
+#         initialize_params {
+#             image = "debian-cloud/debian-11"
+#         }
+#     }
 
-    network_interface {
-        network = "default"
-        access_config {}
-    }
-}
+#     network_interface {
+#         network = "default"
+#         access_config {}
+#     }
+# }
 
 resource "google_storage_bucket" "bucket" {
     name = "tf-bucket-${var.project_id}"
